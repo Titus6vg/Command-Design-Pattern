@@ -10,14 +10,17 @@ public class HealCommand implements Command{
 	public HealCommand(Robot robot) {
 		this.robot = robot;
 	}
-	
+
+	/**
+	 * executes the heal command
+	 */
 	@Override
 	public void execute() {
 		robot.heal();
 	}
 	
-	/*
-	 * Return heal
+	/**
+	 * @return heal string
 	 */
 	public String getName() {
 		return "heal";

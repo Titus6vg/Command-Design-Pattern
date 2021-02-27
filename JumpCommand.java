@@ -11,13 +11,16 @@ public class JumpCommand implements Command {
 		this.robot = robot;
 	}
 	
+	/**
+	 * executes the jump command
+	 */
 	@Override
 	public void execute() {
 		robot.jump();
 	}
 	
-	/*
-	 * Return Jump
+	/**
+	 * @return jump string
 	 */
 	public String getName() {
 		return "jump";

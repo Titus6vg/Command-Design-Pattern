@@ -11,13 +11,16 @@ public class PickupCommand implements Command {
 		this.robot = robot;
 	}
 	
+	/**
+	 * executes the pickup command
+	 */
 	@Override
 	public void execute() {
 		robot.pickup();
 	}
 	
-	/*
-	 * Return Pickup
+	/**
+	 * @return pickup string
 	 */
 	public String getName() {
 		return "pickup";

@@ -11,13 +11,16 @@ public class FireCommand implements Command{
 		this.robot = robot;
 	}
 	
+	/**
+	 * executes the fire command
+	 */
 	@Override
 	public void execute() {
 		robot.fire();
 	}
 	
-	/*
-	 * Return fire
+	/**
+	 * @return fire string
 	 */
 	public String getName() {
 		return "fire";
